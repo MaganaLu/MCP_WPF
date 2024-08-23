@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="SimpleHmi.Views.LeftMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SimpleHmi.Views"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"            
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             mc:Ignorable="d">
+    <Border BorderBrush="Black" BorderThickness="0,0,1,0">
+        <StackPanel>
+            <Button Width="78"
+                    Height="25"
+                    Content="Home" Command="{Binding NavigateToMainPageCommand}" />
+            
+            <Button Width="78"
+                    Height="25"
+                    Content="MCP01" Command="{Binding NavigateToMCP01PageCommand}" />
+
+            <Button Width="78"
+                    Height="25"
+                    Content="MCP02" Command="{Binding NavigateToMCP02PageCommand}" />
+
+            <Button Width="78"
+                    Height="25"
+                    Content="MCP03" Command="{Binding NavigateToMCP03PageCommand}" />
+
+            <Button Width="78"
+                    Height="25"
+                    Content="MCP04" Command="{Binding NavigateToMCP04PageCommand}" />
+            
+            <Button Width="78"
+                    Height="25"
+                    Content="MCP05" Command="{Binding NavigateToMCP05PageCommand}" />
+            
+            <Button Width="78"
+                    Height="25"
+                    Content="MCP06" Command="{Binding NavigateToMCP06PageCommand}" />
+            
+            <Button Width="78"
+                    Height="25"
+                    Content="MCP07" Command="{Binding NavigateToMCP07PageCommand}" />
+        </StackPanel>
+    </Border>
+</UserControl>

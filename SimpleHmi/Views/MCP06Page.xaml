@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="SimpleHmi.Views.MCP06Page"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SimpleHmi.Components" xmlns:views="clr-namespace:SimpleHmi.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             xmlns:design="clr-namespace:SimpleHmi.Designer"
+             d:DataContext="{d:DesignInstance design:DesignMCP06PageViewModel, IsDesignTimeCreatable=True}">
+    <Grid Background="LightCyan">
+
+        <views:ConveyorControl x:Name="binding" Title="PS04-04"  RestartCommand="{Binding Path=MCP06ViewModel.TestCommand}"/>
+
+    </Grid>
+</UserControl>
